@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1 {
+  font-family: 'Cutive Mono', monospace;
+}
+
+h2 {
+  font-family: 'Cutive Mono', monospace;
+}
+
+h3 {
+  font-family: 'Cutive Mono', monospace;
+}
+
+h4 {
+  font-family: 'Cutive Mono', monospace;
+}
+
+h5 {
+  font-family: 'Cutive Mono', monospace;
+}
+
+h6 {
+  font-family: 'Cutive Mono', monospace;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.scroll-downs {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  margin: auto;
+  position: absolute;
+  width: 34px;
+  height: 55px;
+}
+
+.mousey {
+  width: 3px;
+  padding: 10px 15px;
+  height: 35px;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  opacity: 0.75;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+.scroller {
+  width: 3px;
+  height: 10px;
+  border-radius: 25%;
+  background-color: #fff;
+  -webkit-animation-name: scroll;
+          animation-name: scroll;
+  -webkit-animation-duration: 2.2s;
+          animation-duration: 2.2s;
+  -webkit-animation-timing-function: cubic-bezier(0.15, 0.41, 0.69, 0.94);
+          animation-timing-function: cubic-bezier(0.15, 0.41, 0.69, 0.94);
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes scroll {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(15px);
+            transform: translateY(15px);
+    opacity: 0;
+  }
+}
+
+@keyframes scroll {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(15px);
+            transform: translateY(15px);
+    opacity: 0;
+  }
+}
+
+.navbar {
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  -webkit-transition: top 0.3s;
+  transition: top 0.3s;
+  text-align: center;
+  z-index: 10;
+}
+
+.navbar a {
+  font-family: 'Cutive Mono', monospace;
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+}
+
+.navbar .logo {
+  height: 50px;
+  padding: 0px;
+}
+
+.snappy {
+  overflow-y: scroll;
+  width: 100%;
+  height: 100vh;
+  -ms-scroll-snap-points-y: snapInterval(0, 100vh);
+  -ms-scroll-snap-type: mandatory;
+  -webkit-snap-points-y: repeat(100vh);
+  -webkit-scroll-snap-type: mandatory;
+  -ms-scroll-snap-points-y: repeat(100vh);
+      scroll-snap-points-y: repeat(100vh);
+  scroll-snap-type: mandatory;
+  scroll-behavior: smooth;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  scroll-snap-align: center;
+}
+
+.home {
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(assets/bg.png);
+  position: relative;
+}
+
+.home .desk {
+  z-index: 3;
+  margin-bottom: 1%;
+  height: 10%;
+  position: absolute;
+  display: block;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
+  bottom: 0%;
+}
+
+.home .logo {
+  z-index: 3;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 40%;
+}
+
+.home .stars {
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-image: radial-gradient(white, rgba(255, 255, 255, 0.2) 2px, transparent 40px), radial-gradient(white, rgba(255, 255, 255, 0.15) 1px, transparent 30px), radial-gradient(white, rgba(255, 255, 255, 0.1) 2px, transparent 40px), radial-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1) 2px, transparent 30px);
+  background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+  background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+}
+
+.who {
+  background-color: white;
+  padding: 100px;
+}
+
+.section--3 {
+  background-color: lightgreen;
+}
+/*# sourceMappingURL=main.css.map */
