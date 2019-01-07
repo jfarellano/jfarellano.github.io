@@ -1,14 +1,15 @@
 
 $(document).ready(function () {
-    if ($(".snappy").scrollTop() == 0) {
+    if ($(window).scrollTop() == 0) {
         $('.navbar').stop(true, false).animate({backgroundColor: 'transparent'}, 100);
         $('.navbar .logo').fadeOut(100);
     } else {
         $('.navbar').animate({backgroundColor: '#100026'}, 100);
         $('.navbar .logo').fadeIn(100);
     }
-    $(".snappy").scroll(function(){
-        if ($(".snappy").scrollTop() == 0) {
+    $(window).scroll(function(){
+        console.log("Scroll")
+        if ($(window).scrollTop() == 0) {
             $('.navbar').stop(true, false).animate({backgroundColor: 'transparent'}, 100);
             $('.navbar .logo').fadeOut(100);
         } else {
@@ -16,4 +17,8 @@ $(document).ready(function () {
             $('.navbar .logo').fadeIn(100);
         }
     })
+    $.scrollify({
+        section : "section",
+        sectionName : ".home, .who, .work"
+    });
 });
