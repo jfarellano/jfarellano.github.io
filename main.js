@@ -1,6 +1,6 @@
 
 $(document).ready(function () {
-    if ($(window).scrollTop() == 0) {
+    if ($(window).scrollTop() < 50) {
         $('.navbar').stop(true, false).animate({backgroundColor: 'transparent'}, 100);
         $('.navbar .logo').fadeOut(100);
     } else {
@@ -8,7 +8,6 @@ $(document).ready(function () {
         $('.navbar .logo').fadeIn(100);
     }
     $(window).scroll(function(){
-        console.log("Scroll")
         if ($(window).scrollTop() == 0) {
             $('.navbar').stop(true, false).animate({backgroundColor: 'transparent'}, 100);
             $('.navbar .logo').fadeOut(100);
