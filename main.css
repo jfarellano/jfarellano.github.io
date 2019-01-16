@@ -29,6 +29,33 @@ h6 {
   font-family: 'Cutive Mono', monospace;
 }
 
+@media only screen and (max-width: 600px) {
+  p {
+    font-size: 0.5em;
+  }
+  h1 {
+    font-size: 1em;
+  }
+  h2 {
+    font-size: 1em;
+  }
+  h3 {
+    font-size: 1em;
+  }
+  h4 {
+    font-size: 1em;
+  }
+  h5 {
+    font-size: 1em;
+  }
+  h6 {
+    font-size: 1em;
+  }
+  .face {
+    width: 30%;
+  }
+}
+
 p {
   font-family: 'Montserrat', sans-serif;
 }
@@ -182,6 +209,11 @@ section {
 
 .who {
   background-color: white;
+  background-image: url(assets/balloon.svg);
+  background-size: 20%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: right bottom;
   height: 100%;
 }
 
@@ -191,6 +223,10 @@ section {
 
 .who .container {
   height: 100%;
+}
+
+.who img {
+  width: 80%;
 }
 
 .who .row {
@@ -213,7 +249,193 @@ section {
       align-self: center;
 }
 
-.section--3 {
-  background-color: lightgreen;
+.who .image {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .who img {
+    width: 40%;
+  }
+  .who .image {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+}
+
+.work {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.work .pic {
+  text-align: center;
+}
+
+.work .carousel-indicators li {
+  background-color: #212121;
+}
+
+.work .carousel-indicators .active {
+  background-color: #727272;
+}
+
+.work .container {
+  height: 100%;
+}
+
+.work .row {
+  height: 100%;
+  display: -webkit-flex;
+  /* Safari */
+  -webkit-align-items: flex-start;
+  /* Safari 7.0+ */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.work div {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.work h1 {
+  font-size: 3em;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.work .main h1 {
+  color: white;
+  font-size: 5em;
+  text-decoration: underline;
+}
+
+.work .main p {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.work .tele {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  margin: auto;
+  position: absolute;
+  height: 20%;
+}
+
+.work .first {
+  position: relative;
+}
+
+.work .vertical img {
+  width: 80%;
+}
+
+.work .psico h1 {
+  color: #0AD0FC;
+}
+
+.work .psico p {
+  color: #212121;
+}
+
+.work .litivo h1 {
+  color: white;
+}
+
+.work .litivo p {
+  color: #212121;
+}
+
+.work .litivo a {
+  color: white;
+}
+
+.work .techo h1 {
+  color: #0092dd;
+}
+
+.work .techo p {
+  color: #212121;
+}
+
+.work .ieee h1 {
+  color: white;
+}
+
+.work .ieee p {
+  color: white;
+}
+
+.work .ieee a {
+  color: #212121;
+}
+
+.work .uni5 h1 {
+  color: #0626EA;
+}
+
+.work .uni5 p {
+  color: #212121;
+}
+
+@media only screen and (max-width: 600px) {
+  .work div {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+  .work h1 {
+    font-size: 2em;
+  }
+  .work p {
+    font-size: 0.7em;
+  }
+  .work .title {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  .work .info {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  .work .pic {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+  .work .vertical img {
+    margin-top: 60px;
+    height: auto;
+    width: 50%;
+  }
+  .work img {
+    margin-top: 60px;
+    height: auto;
+    width: 50%;
+  }
+}
+
+.full-screen {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%666666' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%666666' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
 }
 /*# sourceMappingURL=main.css.map */

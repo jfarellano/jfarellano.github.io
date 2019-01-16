@@ -8,6 +8,19 @@
         font-family: 'Cutive Mono', monospace;
     }
 }
+@media only screen and (max-width: 600px) {
+    p {
+        font-size: 0.5em;
+    }
+    @for $index from 1 through 6 {
+        h#{$index}{
+            font-size: 1em;
+        }
+    }
+    .face{
+        width: 30%;
+    }
+}
 
 p{
     font-family: 'Montserrat', sans-serif;
@@ -124,12 +137,20 @@ section {
 
 .who {
     background-color: white;
+    background-image: url(assets/balloon.svg);
+    background-size: 20%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position:right bottom;
     height: 100%;
     h3{
         font-size: 3em;
     }
     .container{
         height: 100%;
+    }
+    img{
+       width: 80%;
     }
     .row{
         height: 100%;
@@ -141,8 +162,172 @@ section {
     .info{
         align-self: center;
     }
+    .image{
+        align-self: center;
+        text-align: center;
+    }
+    @media only screen and (max-width: 600px){
+        img{
+            width: 40%;
+        }
+        .image{
+            align-self: flex-end;
+        }
+    }
 }
 
-.section--3 {
-    background-color: lightgreen;
+.work {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    .pic{
+        text-align: center;
+    }
+    .carousel-indicators li{
+        background-color: #212121;
+    }
+    .carousel-indicators .active{
+        background-color: #727272;
+    }
+    .container{
+        height: 100%;
+    }
+    .row{
+        height: 100%;
+        display: -webkit-flex; /* Safari */
+        -webkit-align-items: flex-start; /* Safari 7.0+ */
+        display: flex;
+        align-items: flex-start;
+    }
+    div{
+        align-self: center;
+    }
+    h1{
+        font-size: 3em;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    .main{
+        h1{
+            color: white;
+            font-size: 5em;
+            text-decoration: underline;
+        }
+        p{
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+        }
+    }
+    
+    .tele{
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+        margin: auto;
+        position:absolute;
+        height: 20%;
+    }
+    .first{
+        position: relative;
+    }
+    .vertical{
+        img{
+            width: 80%;
+        }
+    }
+    .psico{
+        h1{
+            color: #0AD0FC;
+        }
+        p{
+            color: #212121;
+        }
+    }
+    .litivo{
+        h1{
+            color: white;
+        }
+        p{
+            color: #212121;
+        }
+        a{
+            color: white;
+        }
+    }
+    .techo{
+        h1{
+            color: #0092dd;
+            
+        }
+        p{
+            color: #212121;
+        }
+    }
+    .ieee{
+        h1{
+            color:white;
+        }
+        p{
+            color: white;
+        }
+        a{
+            color: #212121;
+        }
+    }
+    .uni5{
+        h1{
+            color: #0626EA;
+        }
+        p{
+            color: #212121;
+        }
+    }
+    @media only screen and (max-width: 600px) {
+        div{
+            align-self: flex-end;
+        }
+        h1{
+            font-size: 2em;
+        }
+        p{
+            font-size: 0.7em;
+        }
+        .title{
+            align-self: flex-start;
+        }
+        .info{
+            align-self: flex-start;
+        }
+        .pic{
+            align-self: flex-end;
+        }
+        .vertical{
+            img{
+                margin-top: 60px;
+                height: auto;
+                width: 50%;
+            }
+        }
+        img{
+            margin-top: 60px;
+            height: auto;
+            width: 50%;
+        }
+    }
+}
+
+.full-screen {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+$carousel-control-color: #7b277d;
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%666666' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%666666' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
 }
