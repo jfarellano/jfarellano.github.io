@@ -348,6 +348,10 @@ section {
   color: #212121;
 }
 
+.work .psico a {
+  color: #0AD0FC;
+}
+
 .work .litivo h1 {
   color: white;
 }
@@ -448,6 +452,7 @@ section {
 }
 
 .contact .icon {
+  font-family: 'Montserrat', sans-serif;
   font-size: 1em;
   margin: 10px 0px;
   color: #212529;
